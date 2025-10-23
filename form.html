@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garage91 | Accessory Order Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Garage91 Accessory Order Form</h1>
+  </header>
+
+  <form id="orderForm" onsubmit="return validateForm()">
+    <label>Full Name:</label>
+    <input type="text" id="name" placeholder="Enter your name"><br>
+
+    <label>Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required><br>
+
+    <label>Password:</label>
+    <input type="password" id="password" placeholder="Create a password" required><br>
+
+    <label>Phone Number:</label>
+    <input type="text" id="phone" placeholder="10-digit number"><br>
+
+    <label>Car Brand:</label>
+    <input type="text" id="brand" placeholder="e.g., Hyundai, Maruti" required><br>
+
+    <label>Model:</label>
+    <input type="text" id="model" placeholder="e.g., i20, Swift" required><br>
+
+    <label>Accessory Type:</label>
+    <select id="accessory" required>
+      <option value="">--Select--</option>
+      <option value="alloy">Alloy Wheels</option>
+      <option value="cover">Car Cover</option>
+      <option value="perfume">Car Perfume</option>
+      <option value="lights">LED Lights</option>
+    </select><br>
+
+    <label>Quantity:</label>
+    <input type="number" id="quantity" min="1" max="5" required><br>
+
+    <label>Delivery Date:</label>
+    <input type="date" id="date" required><br>
+
+    <label>Payment Method:</label>
+    <input type="radio" name="payment" value="cod" required> COD
+    <input type="radio" name="payment" value="online"> Online<br>
+
+    <label>Additional Comments:</label>
+    <textarea id="comments" rows="3" placeholder="Any special requests?"></textarea><br>
+
+    <label>
+      <input type="checkbox" id="terms"> I agree to Garage91 Terms & Conditions
+    </label><br>
+
+    <button type="submit">Submit Order</button>
+  </form>
+
+  <footer>
+    <p>© 2025 Garage91. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
